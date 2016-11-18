@@ -1,0 +1,10 @@
+<div class="app">
+    <nav class="flexbox">
+        <a *ngFor="let link of links" routerLink="{{ link.href }}" routerLinkActive="active">
+            {{ link.label }}
+        </a>
+    </nav>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+</div>
